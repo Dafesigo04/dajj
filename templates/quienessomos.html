@@ -1,0 +1,97 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondo animado</title>
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleQui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/stylequien.css' %}">
+</head>
+<body>
+    <header class="bg_animate">
+        <div class="header_nav">
+        </div>
+
+        <section class="banner contenedor">
+            <secrion class="banner_title">
+                <h1>Quienes somos?</h1>
+                
+            </secrion>
+            <div class="banner_img">
+                <img src="{% static 'images/logonuevo.png' %}" alt="">
+            </div>
+        </section>
+
+        <div class="burbujas">
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+            <div class="burbuja"></div>
+        </div>
+    </header>
+    <footer>
+        <div class="salir">
+            <div class="col  d-flex justify-content-between align-items-center p-2"><a href="{% url 'index' %}"target="_blank"><i class="fa-solid fa-share"></i>Salir</a></div>
+        </div>
+    
+            <main>
+            <div class="tituloMain">Acerca de De Alice Peluquería</div>
+    
+            <p class="primerPmain">De Alice peluquería es una entidad ubicada en la localidad de Engativá en el barrio la florida especializada a brindar servicios estéticos. De Alice peluquería cuenta con un equipo íntegro y especializado, experto en cortes, cambios de color y tratamientos de belleza en pies y manos al momento en que nos visites.
+        </p>
+            
+        </main>
+    
+        <article class="lugarImagen">
+            <img src="{% static 'images/mision.jpg' %}" width="1000" height="600"
+            title="Misión">
+        </article>
+    
+        <aside class="lugarAside">
+            <div class="tituloMain2"><h1>Misión</h1></div>
+            <h3>Ofrecer servicios de cuidado personal y estética, atendiendo a las peticiones de los clientes para ayudarles a sentirse más cómodos con su presentación personal</h3>
+    
+        
+        </aside>
+    
+        <article class="lugarImagen2">
+            <img src="{% static 'images/vision.jpg' %}" width="1000" height="600"
+            title="Visión">
+        </article>
+    
+        <aside class="lugarAside2">
+            <div class="tituloMain2"><h1>Visión</h1></div>
+            <h3>Ser una entidad líder en la satisfacción de la búsqueda de la belleza en el mercado laboral</h3>
+    
+        
+        </aside>
+    
+    
+        <article class="lugarImagen3">
+            <img src="{% static 'images/objetivos.jpg' %}" width="1000" height="600"
+            title="Objetivos">
+        </article>
+    
+        <aside class="lugarAside3">
+            <div class="tituloMain2"><h1>Objetivos</h1></div>
+            <ul>
+                <h3>Ser una entidad lider en la satisfacción de la busqueda de la belleza en el mercado laboral.</h3>
+                <h3>Brindar un excelente servicio a la comunidad.</h3>
+                <h3>Generar una excelente imagen personal.</h3>
+            </ul>
+    
+        
+        </aside>
+    </footer>
+
+</body>
+</html>

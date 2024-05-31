@@ -1,0 +1,224 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/styleDashboardAdmin.css' %}">
+	<link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/color.css' %}">
+	<link rel="stylesheet" href="{% static 'css/styleHorario-2.css' %}">
+	<title>BienvenidoAdministrador</title>
+</head>
+<body>
+	<div class="container-fluid">
+
+		<!--1 fila: header -->
+		<div class="row">
+			<header class="col  d-flex justify-content-between align-items-center p-2">
+
+				<div><img src="{% static 'images/DAJJsis.jpeg' %}" alt=""></div>
+				<div><a href="{% url 'index' %}"><i class="fa-solid fa-share"></i>Salir</a></div>
+			</header>
+		</div>
+
+
+		<!--2 fila: contenido: barra de navegación - contenido ppal-->
+
+		<div class="row">
+
+			<!--Barra de navegación-->
+			<div class="col-2 bgNav">
+
+				<center>
+				<div class="rol">
+                        <img src="{% static 'images/Perfil.png' %}" alt="">
+                        <h4>Daniel</h4>
+                        <h5>Administrador</h5>
+                    </div>
+                 </center>
+
+				<center><h4>Gestión de Usuarios</h4></center>
+				<ul>
+					<li><a href="{% url 'dashboardAdmin-CrearUsuario' %}"><i class="fa-solid fa-user-plus"></i>Crear Usuarios</a></li>
+                    <li><a href="{% url 'consultarusuario' %}"><i class="fa-solid fa-users-rays"></i>Consultar Usuarios</a></li>
+				</ul>
+
+				<center><h4>Gestión de Horarios</h4></center>
+				<ul>
+					<li><a href="{% url 'dashboardAdmin-Disponibilidad' %}"><i class="fa-solid fa-eye"></i>Consultar disponivilidad</a></li>
+                    <li><a href="{% url 'dashboardAsigHor' %}"><i class="fa-solid fa-calendar-plus"></i>Asignación de horarios</a></li>
+                    <li><a href="{% url 'dashboardNuevoHorario' %}"><i class="fa-solid fa-file-import"></i>Nuevo Horario</a></li>
+                    <li><a href="{% url 'dashboardAdminCrearCita' %}"><i class="fa-solid fa-clipboard-question"></i>Crear cita</a></li>
+                    <li><a href="{% url 'loginInvent' %}"><i class="fa-solid fa-cart-flatbed"></i>Inventario</a></li>
+				</ul>
+
+				<center><h4>Reportes</h4></center>
+				<ul>
+				<li><a href="{% url 'dashboardAsistencia' %}"><i class="fa-solid fa-clipboard-user"></i>Asistencias</a></li>
+				</ul>
+			</div>
+
+
+			<!--2 columna Contenido ppal -->
+			<div class="col-10">
+				
+				<div class="row">
+					<center>
+		<marquee behavior="" direction="">
+			<h1 style= "padding: 1rem;">Horario de Atención</h1>
+		</marquee>
+		
+	</center>
+
+
+
+	<center>
+	<table style="color: #03045e;" bgcolor="=#000">
+		<tr>
+			<th bgcolor="#ef233c" style="height: 50px;">
+				&nbsp Hora &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Lunes &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Martes &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Miercoles &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Jueves &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Viernes &nbsp
+			</th>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">  &nbsp 7:00 AM-8:00 AM &nbsp </td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+	
+	
+	   <tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 8:00 AM-9:00 AM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+        <tr bgcolor="#a7c957">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 9:00 AM-10:00 AM &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 10:00 AM-11:00 AM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 11:00 AM-12:00 AM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 12:00 AM-1:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+<tr bgcolor="#a7c957">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 1:00 PM-2:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 2:00 PM-3:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 3:00 PM-4:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 4:00 PM-5:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 5:00 PM-6:00 PM &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+
+	</table>
+	</center>
+	
+	
+
+
+
+		    </div>
+		
+
+
+
+
+
+	</div>
+
+
+	<div class="row">
+                <footer class="col">
+                    <div></div>
+                    <div>Coordinación Academica de Tecnología e Informática</div>
+                    <div>Sena Centro de Servicios Financieros - 2022</div>
+                </footer>
+            </div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

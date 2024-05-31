@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styleHorario.css">
+	<title>Document</title>
+</head>
+<body>
+
+	<header>
+		<h1>Bienvenido a el Horario</h1>
+	</header>
+
+	<main>
+		<div class="tituloMain">Uso de este espacio</div>
+
+		<p class="primerPmain">A continuación en esta sección podras consultar nuestro horario de atención</p>
+
+		<p class="segundoPmain">Abajo del horario podras encontrar un formulario en donde podras Ingresas tus datos y la fecha de la cita junto con el servicio que deseas adquirir, asignalo deacuerdo a la fecha que mejor te convenga.</p>
+
+	
+	</main>
+
+
+
+	<center>
+		<marquee behavior="" direction="">
+			<h1 style= "padding: 1rem;">Horario de Atención</h1>
+		</marquee>
+		
+	</center>
+
+
+
+	<center>
+	<table style="color: #03045e;" bgcolor="=#000">
+		<tr>
+			<th bgcolor="#ef233c" style="height: 50px;">
+				&nbsp Hora &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Lunes &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Martes &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Miercoles &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Jueves &nbsp
+			</th>
+			<th bgcolor="#ef233c">
+				&nbsp Viernes &nbsp
+			</th>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp &nbsp 7:30-8:15 &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td> &nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+	
+	
+	   <tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 8:15-9:00 &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+        <tr bgcolor="#a7c957">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 9:00-9:45 &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Descanso &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 10:15-11:00 &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;"> &nbsp 11:00-11:45 &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+		<tr bgcolor="#faf0ca">
+		<td bgcolor="#ffca3a" style="height: 50px;">&nbsp 11:45-12:30 &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		<td>&nbsp &nbsp Disponible &nbsp &nbsp</td>
+		</tr>
+
+	</table>
+	</center>
+	
+	<section class="Horario">
+			<h2>Registro citas</h2>
+			<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required="">
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
+        
+        <br>
+        <label for="TipoIdent">Tipo de Identificacion:</label>
+        <select name="tipoIdent" id="tipoIdent">
+            <option value="001">Cedula de ciudadania</option>
+            <option value="002">Cedula extranjera</option>
+            <option value="003">Tarjeta de Identidad</option>
+        </select>
+        <input class="controls" type="id"name="Identificacion" id="Identificación" placeholder="Ingrese su cedula">
+        <input class="controls" type="date"name="Fecha" id="Fecha" min="1945-01-30" max="1998-10-18" placeholder="Ingrese la fecha que desea">
+        <input class="controls" type="time"name="Hora" id="Hora" min="15:00" max="18:00" placehorlder="Ingrese la hora que desea">
+        <label for="Ingrese el servicio deseado">Servicio</label>
+        <select name="Servicio" id="Servicio">
+            <option value="">Cortes</option>
+            <option value="">Tintes</option>
+            <option value="">Manicure</option>
+             <input class="botons" type="submit" value="Crear">
+</body>
+</html>

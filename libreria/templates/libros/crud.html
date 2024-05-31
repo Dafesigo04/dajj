@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block titulo%} Lista de Citas {% endblock %}
+
+{% block contenido%} 
+
+<div class="card">
+    <div class="card-header">
+        <a name="" id="" class="btn btn-success" href="{% url 'crear' %}" role="button">Crear una nueva cita</a>
+    </div>
+    <div class="card-body">
+        <h4 class="card-title">Citas</h4>
+        
+        <div class="table">
+            <table id="example" class="table table-primary" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>N° Documento</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Servicio</th>
+                        <th>Estilista</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    {% for libro in libros %} 
+                    <tr class="">
+                        <td>{{ libro.id }}</td>
+                        <td>{{ libro.nombre }}</td>
+                        <td>{{ libro.apellido }}</td>
+                        <td>{{ libro.correo }}</td>
+                        <td>{{ libro.documento }}</td>
+                        <td>{{ libro.fecha }}</td>
+                        <td>{{ libro.hora }}</td>
+                        <td>{{ libro.servicio }}</td>
+                        <th>{{ libro.estilista }}</th>
+                        <td> <a name="" id="" class="btn btn-info" href="{% url 'editar' libro.id %}" role="button">Editar</a> 
+                        </td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
+
+{% endblock %}

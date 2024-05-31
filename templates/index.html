@@ -1,0 +1,103 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/all.min.css' %}"> <!--pone los iconos-->
+	<title>Peluquería Alicia</title>
+</head>
+<body>
+	
+	<header>
+
+		<div class="logo">
+			<img src="{% static 'images/logonuevo.png' %}" alt="">
+			<p><h4>Peluquería Alicia</h4></p>
+		</div>
+
+		<div class="nombreE">
+			<a href="{% url 'index' %}"target="_blank"><i class="fa-solid fa-hourglass-start"></i> Inicio</a>
+			<a href="{% url 'indexlogin' %}"><i class="fa-solid fa-person"></i>Citas</a>
+			<a href="{% url 'registro' %}"><i class="fa-solid fa-right-to-bracket"></i>Login</a>
+			<a href="{% url 'contacto' %}"><i class="fa-sharp fa-solid fa-address-book"></i>Contactenos</a>
+	        
+		</div>
+
+	</header>
+
+	<div class="prueba">
+		<section2 class="textos-prueba_1">
+			<h1>PELUQUERIA ALICIA</h1>
+			<h2>MEJORA TU APARIENCIA</h2>
+		</section2>
+	</div>
+
+	<main>
+		<section>
+			<div class="seccion seccionColor_1">
+				<p>El teñido del cabello es el procedimiento para cambiar el color del pelo. Los motivos más normales para realizar un cambio de color de cabello pueden variar desde buscar un nuevo color para estar a la moda, hasta tapar la decoloración natural que sufre el cabello con el paso del tiempo.</p>
+				<img src="{% static 'images/woman-getting-her-hair-dyed-at-home-by-hairdresser.jpg' %}" alt="">
+			</div>
+			<div class="seccion seccionColor_1">
+				<img src="{% static 'images/the-man-cuts-his-beard-in-the-barbershop.jpg' %}" alt="">
+				<p>Un corte de pelo, también llamado corte de cabello, es la modificación del tipo de peinado, variando con ello el aspecto exterior de la persona en función de factores como la moda de cada momento, el estatus social o la identidad cultural o étnica.</p>
+			</div>
+			<div class="seccion seccionColor_1">
+				<p>El manicure básico es un proceso que debe considerarse como un auténtico tratamiento higiénico de las uñas. Si la manicura se realiza con los gestos adecuados y con los instrumentos específicos, puede llegar a corregir defectos de crecimiento o de forma.</p>
+				<img src="{% static 'images/healthy-beautiful-manicure-and-manicurist.jpg' %}" alt="">
+		     </div>
+			<div class="seccion seccionColor_1">
+				<img src="{% static 'images/home-salon-pedicure-foot-care-treatment-and-nail-the-process-of-professional-pedicures-master-in-blue-gloves-apply-light-pink-gel-polish.jpg' %}" alt="">
+			<p>La pedicura es el tratamiento de los trastornos que afectan a los pies, como uñeros o callos. La noción también alude a los procedimientos que se llevan a cabo por cuestiones estéticas.</p>
+			</div>
+
+		</section>
+	</main>
+
+	<footer>
+		<div class="piePagina">
+
+			<div class="pFila">
+				<p>©DERECHOS RESERVADOS-2022</p>
+
+				<div class="lOGfila">
+					<h1>PARA MAS IMFORMACIÓN</h1>
+				</div>
+
+			
+			</div>
+
+			<div class="Sfila">
+				<div class="aprendiz">
+					<img src="{% static 'images/facebook.png' %}" alt="" title="Facebook">
+					<p>Facebook</p>
+				</div>
+
+				<div class="aprendiz">
+					<a href="#"><img src="{% static 'images/whatsapp.png' %}" alt="icono whatsapp" title="whatsapp"></a>
+					<p>Whatsapp</p>
+				</div>
+
+				<div class="aprendiz">
+					<a href="{% url 'quienessomos' %}"><img src="{% static 'images/ask.png' %}" alt="icono pregunta" title="Quien?"></a>
+					<p>Quienes somos</p>
+				</div>
+
+				<div class="aprendiz">
+					<p>Dirección</p>
+					<p>Cl. 69a ##88-44</p>
+				</div>
+
+			</div>
+
+			<div class="Tfila">
+				<img src="{% static 'images/85YM.gif' %}" alt="">
+			</div>
+			
+		</div>
+	</footer>
+</body>
+</html>

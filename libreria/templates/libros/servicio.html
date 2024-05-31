@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block titulo%} Lista de libros {% endblock %}
+
+{% block contenido%} 
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Servicios</h4>
+        
+        <div class="table">
+            <table id="example" class="table table-primary" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Foto</th>
+                        <th>Nombre</th>
+                </thead>
+                <tbody>
+                    
+                    {% for libro in libros %} 
+                    <tr class="">
+                        <td>{{ libro.id }}</td>
+                        <td>
+                            <img src="{{ libro.foto.url}}" height="100">
+                        </td>
+                        <td>{{ libro.nombre }}</td>
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <div class="card-footer text-muted">
+        
+    </div>
+</div>
+
+{% endblock %}

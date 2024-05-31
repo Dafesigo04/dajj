@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;0,900;1,600&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height:665px;
+	background-image: url('https://pixabay.com/get/gf8240a9c2a8b6da14c208286eb2196b6a492a5d2be4f5ae11828497d2cab78085ab8eafb24a7e35343219c4d4b295946.jpg');
+	background-size: 100%;
+}
+
+
+.Einventario {
+	width: 400px;
+	background: #0D1B2A;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 4px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+
+}
+
+
+.controls {
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 16px;
+	border: 1px solid #0D1B2A;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+
+}
+
