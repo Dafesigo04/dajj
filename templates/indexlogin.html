@@ -30,8 +30,9 @@
          <div class="input-contenedor">
         <i class="fas fa-key icon"></i>
         <label for="password"></label>
-         <input type="password" placeholder="Contraseña" name="password" required="Completa este campo">
-         </div>
+       <input type="password" placeholder="Contraseña" name="password" class="passw" id="Input">
+        <img src="{% static 'images/Show.png' %}" alt="" class="icon2" id="Eye">
+       </div>
 
          <input type="submit" value="Login" class="button" href="Login.html"> 
          <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
@@ -39,5 +40,7 @@
          <p>Ingrese como administrador <a class="link" href="{% url 'admin:index' %}">Admin </a></p>
      </div>
     </form>
+
+    <script src="{% static 'js/contraseña.js' %}"></script>
 </body>
 </html>

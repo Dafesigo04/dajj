@@ -12,6 +12,7 @@ img {
   width: 15%;
  padding: 10px;
  margin: 10px;
+ margin-bottom: -20%;
   float: left;  
 }
 .contenedor{
@@ -78,4 +79,22 @@ p{
         margin-top: 150px;
         border-radius: 2%;
     }
+}
+
+
+
+
+
+
+.icon2{
+    position: relative;
+    height: 60%;
+    top: 50%;
+    left: 390px;
+    transform: translateY(-120%);
+    opacity: 0.3;
+}
+
+.icon2:hover{
+    opacity: 0.8;
 }
